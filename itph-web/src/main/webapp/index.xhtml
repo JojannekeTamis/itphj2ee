@@ -44,6 +44,12 @@
             <h:outputLabel for="phoneNumber" value="Phone #:"/>
             <h:inputText id="phoneNumber" value="#{newMember.phoneNumber}"/>
             <h:message for="phoneNumber" errorClass="invalid"/>
+            
+            <h:outputLabel for="houseNumber" value="House number:"/>
+            <h:inputText id="houseNumber" value="#{newMember.houseNumber}"/>
+            <h:message for="houseNumber" errorClass="invalid"/>
+             
+             
          </h:panelGrid>
 
          <p>
@@ -74,6 +80,10 @@
          <h:column>
             <f:facet name="header">Phone #</f:facet>
                 #{_member.phoneNumber}
+            </h:column>
+          <h:column>
+            <f:facet name="header">Housenumber #</f:facet>
+                #{_member.houseNumber}
             </h:column>
          <h:column>
             <f:facet name="header">REST URL</f:facet>
