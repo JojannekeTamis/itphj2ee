@@ -62,6 +62,7 @@ public class Member implements Serializable {
     
     @NotNull
     @Size(min = 1, max = 1000)
+    @Column(name = "house_number")
     private String houseNumber;
 
     public Long getId() {
